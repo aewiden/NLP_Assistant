@@ -1,3 +1,6 @@
+# Natural Language Processing Assistant
+## Avery Widen
+
 # Background
 A part of speech (POS) tagger labels each word in a sentence with its part of speech (noun, verb, etc.). 
 
@@ -37,3 +40,5 @@ The backtrace, on the other hand, needs to go all the way back: for observation 
 After handling the special case of the start state, start for real with observation 0 and work forward. Either consider all possible states and look back at where they could have come from, or consider all states from which to come and look forward to where they could go. In either case, be sure to find the max score (and keep track of which state gave it).
 Use a constant variable for the observation of an unobserved word, and play with its value.
 The backtrace starts from the state with the best score for the last observation and works back to the start state.
+
+Credit to Dartmouth CS10.
