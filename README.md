@@ -7,8 +7,7 @@ We'll be taking the statistical approach to tagging, which means we need data. F
 The goal of POS tagging is to take a sequence of words and produce the corresponding sequence of tags.
 
 # POS tagging via HMM
-We will use a hidden Markov model (HMM) approach, applying the principles covered in class. Recall that in an HMM, the states are the things we don't see (hidden) and are trying to infer, and the observations are what we do see. So the observations are words in a sentence and the states are tags because the text we'll observe is not annoted with its part of speech tag (that it our program's job). We proceed through a model by moving from state to state, producing one observation per state. In this "bigram" model, each tag depends on the previous tag. Then each word depends on the tag. (For extra credit, you can go to a "trigram" model, where each tag depends on the previous two tags.) Let "#" be the tag "before" the start of the sentence. Then a model encapsulating just our example sentence is:
-
+We will use a hidden Markov model (HMM) approach, applying the principles covered in class. Recall that in an HMM, the states are the things we don't see (hidden) and are trying to infer, and the observations are what we do see. So the observations are words in a sentence and the states are tags because the text we'll observe is not annoted with its part of speech tag (that it our program's job). We proceed through a model by moving from state to state, producing one observation per state. In this "bigram" model, each tag depends on the previous tag. Then each word depends on the tag. (For extra credit, you can go to a "trigram" model, where each tag depends on the previous two tags.) Let "#" be the tag "before" the start of the sentence. 
 pos-hmm.png
 The sentence follows the path: # (start) — DET ("the") — NP ("Fulton") — N ("County") — ADJ ("Grand") — N ("jury") — VD ("said") — N ("Friday") — ... — N ("place") — . (".").
 
