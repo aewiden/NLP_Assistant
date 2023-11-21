@@ -1,20 +1,5 @@
 # Background
-A part of speech (POS) tagger labels each word in a sentence with its part of speech (noun, verb, etc.). For example:
-
-The Fulton County Grand Jury said Friday an investigation of Atlanta's 
-recent primary election produced `` no evidence '' that any 
-irregularities took place .
-
-=>
-DET NP N ADJ N VD N DET N P NP 
-ADJ N N VD `` DET N '' CNJ DET 
-N VD N .
-
-or
-The/DET Fulton/NP County/N Grand/ADJ Jury/N said/VD Friday/N an/DET investigation/N of/P Atlanta's/NP
-recent/ADJ primary/N election/N produced/VD ``/`` no/DET evidence/N ''/'' that/CNJ any/DET 
-irregularities/N took/VD place/N ./.
-So we see that "The" is a "DET" (determiner), "Fulton" an "NP" (proper noun), "County" a "N" (noun), etc. The punctuation is its own tag.
+A part of speech (POS) tagger labels each word in a sentence with its part of speech (noun, verb, etc.). 
 
 The tags that we'll use for this problem set are taken from the book Natural Language Processing with Python:
 
